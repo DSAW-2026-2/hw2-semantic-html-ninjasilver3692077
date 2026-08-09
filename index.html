@@ -136,34 +136,38 @@
       </p>
 
       <form action="#" method="post">
-        <p>
-          <label for="student-name">Full name</label>
-          <input type="text" id="student-name" name="student-name" placeholder="Juan Esteban" required>
-        </p>
+        <fieldset>
+          <legend>Student access request</legend>
 
-        <p>
-          <label for="student-email">University email</label>
-          <input type="email" id="student-email" name="student-email" placeholder="student@example.com" required>
-        </p>
+          <p>
+            <label for="student-name">Full name</label>
+            <input type="text" id="student-name" name="student-name" placeholder="Juan Esteban" autocomplete="name" required>
+          </p>
 
-        <p>
-          <label for="group-name">Group name</label>
-          <input type="text" id="group-name" name="group-name" placeholder="Amigos Sabana" required>
-        </p>
+          <p>
+            <label for="student-email">University email</label>
+            <input type="email" id="student-email" name="student-email" placeholder="student@example.com" autocomplete="email" required>
+          </p>
 
-        <p>
-          <label for="invite-code">Invitation code</label>
-          <input type="text" id="invite-code" name="invite-code" placeholder="PLAY-8392">
-        </p>
+          <p>
+            <label for="group-name">Group name</label>
+            <input type="text" id="group-name" name="group-name" placeholder="Amigos Sabana" required>
+          </p>
 
-        <p>
-          <label for="account-password">Password</label>
-          <input type="password" id="account-password" name="account-password" required>
-        </p>
+          <p>
+            <label for="invite-code">Invitation code</label>
+            <input type="text" id="invite-code" name="invite-code" placeholder="PLAY-8392">
+          </p>
 
-        <p>
-          <button type="submit">Request access</button>
-        </p>
+          <p>
+            <label for="account-password">Password</label>
+            <input type="password" id="account-password" name="account-password" autocomplete="new-password" required>
+          </p>
+
+          <p>
+            <button type="submit">Request access</button>
+          </p>
+        </fieldset>
       </form>
     </section>
 
@@ -173,10 +177,12 @@
         The Figma sketch shows the PlayReal Home screen with annotations for navigation,
         active challenge, progress, evidence feed, ranking, and responsive behavior.
       </p>
+
       <figure>
-        <img src="assets/playreal-wireframe.png" alt="Screenshot of the PlayReal Figma Home wireframe showing the active challenge, personal progress, recent evidence feed, group ranking, and annotation labels.">
+        <img src="assets/playreal-wireframe.png" alt="PlayReal Home wireframe with challenge, progress, evidence feed, ranking, and annotations.">
         <figcaption>PlayReal Figma Home wireframe with the main challenge, progress, feed, ranking, and annotation labels.</figcaption>
       </figure>
+
       <p>
         <a href="https://www.figma.com/make/N0d9HVxNgSnsa5966sK7Yv/PlayReal?t=gVXmmL1W3W2mxLKf-1">View Figma sketch</a>
       </p>
@@ -221,8 +227,16 @@
         <h3>Manual Fixes</h3>
         <p>
           The HTML was adjusted to remove all CSS and JavaScript, keep exactly one h1, preserve a logical
-          h2 and h3 heading hierarchy, add meaningful semantic elements, and connect every form label
-          to its matching input id.
+          h2 and h3 heading hierarchy, add meaningful semantic elements, connect every form label
+          to its matching input id, and shorten the image alternative text after WAVE reported a long alternative text alert.
+        </p>
+      </article>
+
+      <article>
+        <h3>Accessibility Improvements</h3>
+        <p>
+          WAVE reported one alert for long alternative text. The image alt text was shortened.
+          The form was also improved with a fieldset, a legend, and autocomplete attributes for relevant inputs.
         </p>
       </article>
 
