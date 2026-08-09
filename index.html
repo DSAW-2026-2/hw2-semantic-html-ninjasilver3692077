@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayReal</title>
+</head>
+<body>
+  <header>
+    <h1>PlayReal</h1>
+    <p>A web application for student groups that organize challenges with evidence, voting, points, streaks, and ranking.</p>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#justification">Web App Justification</a></li>
+        <li><a href="#users">Target Users</a></li>
+        <li><a href="#flow">Main Flow</a></li>
+        <li><a href="#stories">User Stories</a></li>
+        <li><a href="#interest-form">Interest Form</a></li>
+        <li><a href="#prototype">Figma Sketch</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#ai-log">AI Log</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="overview">
+      <h2>Project Overview</h2>
+      <p>
+        PlayReal helps private student groups create challenges, collect photo evidence, vote for the best submissions,
+        calculate scores, and display a friendly ranking. The platform keeps the project focused on one main flow:
+        group, challenge, evidence, voting, score, and ranking.
+      </p>
+    </section>
+
+    <section id="problem">
+      <h2>Problem</h2>
+      <p>
+        Student groups often organize challenges through WhatsApp, Instagram, or other messaging tools.
+        The evidence gets mixed with normal conversations, votes are counted manually, and students do
+        not have a clear way to see who participated, who received votes, or who is leading the ranking.
+      </p>
+    </section>
+
+    <section id="justification">
+      <h2>Web App Justification</h2>
+
+      <article>
+        <h3>Organized Challenge Flow</h3>
+        <p>
+          A web app can organize the full flow from private group to active challenge, submitted evidence,
+          voting, score calculation, and ranking. A chat does not separate each challenge from normal conversation.
+        </p>
+      </article>
+
+      <article>
+        <h3>Automatic Voting And Scoring</h3>
+        <p>
+          A web app can count votes, calculate points, prevent repeated votes, and update rankings.
+          A spreadsheet or chat would require manual work and could create mistakes.
+        </p>
+      </article>
+
+      <article>
+        <h3>Evidence History</h3>
+        <p>
+          A web app can keep photo evidence, comments, dates, and vote counts organized by challenge,
+          which is difficult to maintain in an existing messaging tool.
+        </p>
+      </article>
+
+      <article>
+        <h3>Responsive Access</h3>
+        <p>
+          A web app can work from a computer or phone browser without installing a native mobile app,
+          making it accessible for university students.
+        </p>
+      </article>
+    </section>
+
+    <section id="users">
+      <h2>Target Users</h2>
+      <p>
+        The target users are university students who participate in small private friend groups and want
+        to stay motivated through visual challenges, evidence, votes, points, streaks, and ranking.
+      </p>
+    </section>
+
+    <section id="flow">
+      <h2>Main User Flow</h2>
+      <ol>
+        <li>Create or join a private group.</li>
+        <li>Check the active challenge.</li>
+        <li>Upload photo evidence with a comment.</li>
+        <li>Vote for another participant's submission.</li>
+        <li>Receive points and streak progress.</li>
+        <li>Review the group ranking.</li>
+      </ol>
+    </section>
+
+    <section id="stories">
+      <h2>User Stories</h2>
+
+      <article>
+        <h3>Create A Group</h3>
+        <p>As a student group member, I want to create a private challenge group so that I can invite my friends and participate with them.</p>
+      </article>
+
+      <article>
+        <h3>See The Active Challenge</h3>
+        <p>As a participant, I want to see the active challenge so that I know what activity I need to complete and before when.</p>
+      </article>
+
+      <article>
+        <h3>Upload Evidence</h3>
+        <p>As a participant, I want to upload a photo with a comment so that I can prove that I completed the challenge.</p>
+      </article>
+
+      <article>
+        <h3>Vote For A Submission</h3>
+        <p>As a participant, I want to vote for another member's submission so that the group can choose the best evidence fairly.</p>
+      </article>
+
+      <article>
+        <h3>View Ranking</h3>
+        <p>As a participant, I want to see the group ranking so that I can know my position, points, completed challenges, and current streak.</p>
+      </article>
+    </section>
+
+    <section id="interest-form">
+      <h2>Interest Form</h2>
+      <p>
+        This sample form represents how a student could request access to an early PlayReal group.
+      </p>
+
+      <form action="#" method="post">
+        <p>
+          <label for="student-name">Full name</label>
+          <input type="text" id="student-name" name="student-name" placeholder="Juan Esteban" required>
+        </p>
+
+        <p>
+          <label for="student-email">University email</label>
+          <input type="email" id="student-email" name="student-email" placeholder="student@example.com" required>
+        </p>
+
+        <p>
+          <label for="group-name">Group name</label>
+          <input type="text" id="group-name" name="group-name" placeholder="Amigos Sabana" required>
+        </p>
+
+        <p>
+          <label for="invite-code">Invitation code</label>
+          <input type="text" id="invite-code" name="invite-code" placeholder="PLAY-8392">
+        </p>
+
+        <p>
+          <label for="account-password">Password</label>
+          <input type="password" id="account-password" name="account-password" required>
+        </p>
+
+        <p>
+          <button type="submit">Request access</button>
+        </p>
+      </form>
+    </section>
+
+    <section id="prototype">
+      <h2>Figma Sketch</h2>
+      <p>
+        The Figma sketch shows the PlayReal Home screen with annotations for navigation,
+        active challenge, progress, evidence feed, ranking, and responsive behavior.
+      </p>
+      <figure>
+        <img src="assets/playreal-wireframe.png" alt="Screenshot of the PlayReal Figma Home wireframe showing the active challenge, personal progress, recent evidence feed, group ranking, and annotation labels.">
+        <figcaption>PlayReal Figma Home wireframe with the main challenge, progress, feed, ranking, and annotation labels.</figcaption>
+      </figure>
+      <p>
+        <a href="https://www.figma.com/make/N0d9HVxNgSnsa5966sK7Yv/PlayReal?t=gVXmmL1W3W2mxLKf-1">View Figma sketch</a>
+      </p>
+    </section>
+
+    <section id="team">
+      <h2>Team Roles</h2>
+
+      <article>
+        <h3>Juan Esteban</h3>
+        <p>Project kickoff and documentation lead. He coordinates the first submissions and keeps the project aligned with the course rubric.</p>
+      </article>
+
+      <article>
+        <h3>Andres</h3>
+        <p>User research lead. He helps validate the problem with real students and gathers feedback about how groups organize challenges.</p>
+      </article>
+
+      <article>
+        <h3>Jorge</h3>
+        <p>UI and UX lead. He supports the wireframe, screen annotations, and responsive structure for the PlayReal interface.</p>
+      </article>
+
+      <article>
+        <h3>Daniel</h3>
+        <p>Repository and deployment lead. He helps organize GitHub Pages and the technical delivery checklist.</p>
+      </article>
+    </section>
+
+    <section id="ai-log">
+      <h2>AI Log</h2>
+
+      <article>
+        <h3>AI-generated Parts</h3>
+        <p>
+          AI helped draft the semantic HTML structure, the project overview, the problem section,
+          the web app justification articles, the user stories, and the form fields.
+        </p>
+      </article>
+
+      <article>
+        <h3>Manual Fixes</h3>
+        <p>
+          The HTML was adjusted to remove all CSS and JavaScript, keep exactly one h1, preserve a logical
+          h2 and h3 heading hierarchy, add meaningful semantic elements, and connect every form label
+          to its matching input id.
+        </p>
+      </article>
+
+      <article>
+        <h3>Reason For Changes</h3>
+        <p>
+          These changes were made because HW02 evaluates semantic HTML structure, accessibility attributes,
+          form labeling, clean heading hierarchy, and absence of styling or scripts.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>PlayReal is a project for DSAW Week 2 at Universidad de La Sabana.</p>
+    <p>Public deployment must be completed through GitHub Pages for grading.</p>
+  </footer>
+</body>
+</html>
